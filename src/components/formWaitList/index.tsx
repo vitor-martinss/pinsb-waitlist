@@ -34,20 +34,20 @@ export default function FormWaitList() {
   });
 
   return (
-      <article className="flex flex-col items-start mb-24 2xl:max-w-[90%]">
+      <article className="flex flex-col items-start mb-10 2xl:max-w-[90%]">
         <Form {...form}>
           <form
             autoComplete="off"
             noValidate
             action='https://getlaunchlist.com/s/DEM82h'
             method='POST'
-            className="flex items-center w-full launchlist-form mb-6"
+            className="flex flex-col gap-4 lg:flex-row lg:items-center w-full launchlist-form mb-6"
           >
             <FormField
                 control={form.control}
                 name="email"
                 render={({ field }: { field: any }) => (
-                <FormItem className="relative w-full max-w-md">
+                <FormItem className="relative w-full lg:max-w-md">
                     <FormControl>
                     <Input
                         autoComplete="off"
@@ -64,7 +64,7 @@ export default function FormWaitList() {
             <Button
               aria-label="form submit"
               type="submit"
-              className="ml-4 text-xl px-5 py-4 h-16 min-w-44"
+              className="lg:ml-4 text-xl px-5 py-4 h-16 min-w-44"
               disabled={!form.formState.isValid}
             >
                 {
