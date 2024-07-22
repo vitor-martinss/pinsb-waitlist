@@ -18,7 +18,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={montSerrat.className}>{children}</body>
-      <Script src="https://getlaunchlist.com/js/widget.js" />
+      <Script src="https://getlaunchlist.com/js/widget-diy.js" defer />
     </html>
   );
 }
