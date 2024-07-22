@@ -6,8 +6,11 @@ import Script from 'next/script'
 const montSerrat = Montserrat({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "pinsb",
-  description: "A new way of saving and sharing, or not, your skate spots",
+  title: "pinsb.app",
+  description: "Waitlist that you should not join",
+  openGraph: {
+    images:['/img/skateboarding-city.jpg'],
+  }
 };
 
 export default function RootLayout({
